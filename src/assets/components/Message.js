@@ -1,10 +1,11 @@
 import React from 'react'
 import FormSpree from './FormSpree'
+import badge from '../images/icon-badge.svg'
 
 const Message = () => {
   return (
     <section className='image_Bkg h-screen bg-cover bg-no-repeat bg-center flex flex-col items-center pt-6 justify-center'>
-      <span className='border-2 border-white bg-blue-500 w-16 h-16 rounded-full relative top-8 left-24'></span>
+      <img className='w-20 h-20' src={badge} alt='quality service badge' />
       <FormSpree />
     </section>
   )
