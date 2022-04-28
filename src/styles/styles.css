@@ -23,6 +23,10 @@
   @apply py-14 px-5
 }
 
+.foot-container {
+  @apply pt-14 pb-4 px-5
+}
+
 .hr-rule {
   @apply w-24 h-1 bg-white
 }
