@@ -1,17 +1,6 @@
-// import React from 'react'
-
-// const SendMesage = () => {
-//   return (
-//     <div className='image_Bkg bg-message-bkg h-screen bg-cover bg-no-repeat bg-center'>
-      
-//     </div>
-//   )
-// }
-
-// export default SendMesage
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-
+import badge from '../images/icon-badge.svg'
 
 function MessageForm() {
   const [state, handleSubmit] = useForm("mnqwqyap");
@@ -23,52 +12,61 @@ function MessageForm() {
       );
   }
   return (
-      <form onSubmit={handleSubmit} 
-        className='bg-indigo-50 flex flex-col pb-4 items-center'>
-          <h2>SEND US A MESSAGE</h2>
-        <section className='flex flex-col container w-screen'>
-          <label 
-            className=''
-            htmlFor="email" 
-            aria-label='your email'>
-            Email Address
-          </label>
-          <input
-            className='mb-4'
-            aria-placeholder='enter your email'
-            id="email"
-            type="email" 
-            name="email"
-            required
-          />
-          <ValidationError 
-            prefix="Email" 
-            field="email"
-            errors={state.errors}
-          />
-          <label 
-            aria-label='your message' 
-            className='' 
-            htmlFor="message">Your message</label>
-          <textarea
-            aria-placeholder='enter your message here'
-            className=''
-            id="message"
-            name="message"
-            placeholder="How can we help?"
-            rows="6" 
-            required
-          />
-          <ValidationError 
-            prefix="Message" 
-            field="message"
-            errors={state.errors}
-          />
-      </section>
-      <button aria-label='center justified' className='border-black border-2 rounded-full w-6/12 py-4'  type="submit" disabled={state.submitting}>
-        Send
-      </button>
-    </form>
+
+        <form onSubmit={handleSubmit} className='max-w-lg flex flex-wrap pb-4 justify-center items-center'>
+          <div className='flex justify-center items-center my-4 basis-full'>
+            
+            <h2 className='mt-6 text-4xl px-4 text-center'>How can we help you today?</h2>
+          </div>
+          {/* <img className='invisible quality-badge sm:visible absolute w-20 h-20 -top-10 left-1/4' src={badge} alt='quality service badge' /> */}
+          <section className='flex flex-col w-screen px-4'>
+            <label 
+              className='mb-2 text-lg uppercase'
+              htmlFor="email" 
+              aria-label='your email'>
+              Email Address
+            </label>
+            <input
+              className='mb-4 h-10 bg-mediumTan border-t-4 border-solid border-primary px-4 py-4l'
+              aria-placeholder='enter your email'
+              id="email"
+              type="email" 
+              name="email"
+              required
+            />
+            <ValidationError 
+              prefix="Email" 
+              field="email"
+              errors={state.errors}
+            />
+            <label 
+              aria-label='your message' 
+              className='mb-2 text-lg uppercase' 
+              htmlFor="message">Your message</label>
+            <textarea
+              aria-placeholder='enter your message here'
+              className='bg-mediumTan border-t-4 border-solid border-primary px-4 py-4'
+              id="message"
+              name="message"
+              placeholder="How can we help?"
+              rows="6" 
+              required
+            />
+            <ValidationError 
+              prefix="Message" 
+              field="message"
+              errors={state.errors}
+            />
+          </section>
+          <div className='flex justify-center items-center basis-full my-8'>
+            <button aria-label='center justified' className='border-black border-2 w-52 rounded-full py-4'  type="submit" disabled={state.submitting}>
+              Send
+            </button>
+          </div>
+        </form>
+      
+  
+    
   );
 }
 const FormSpree = () => {

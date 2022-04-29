@@ -125,7 +125,7 @@
 
 /* header */
 .logo-text {
-  font-size: 6vmin;
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: -1px;
@@ -196,6 +196,7 @@
 
 .image_Bkg {
   background-image: url('../assets/images/sidekix-media-g51F6-WYzyU-unsplash.jpg');
+  height: 100vh;
 }
 
 .dots-pattern {
@@ -223,4 +224,15 @@
 
 .footer-container {
   margin: 0 auto;
+}
+
+.quality-badge {
+  animation-name: spin;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+textarea::placeholder{
+  color: rgb(28, 27, 27);
 }

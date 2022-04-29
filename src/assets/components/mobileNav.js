@@ -21,10 +21,11 @@ export default function MobileNavigation({isOpen, setIsOpen}) {
             {isOpen ? <CloseIcon /> : <OpenIcon />}
           </button>
           {isOpen ? (
-            <div className="absolute -left-0 top-20 w-full h-screen z-10 bg-white px-4 md:px-12 py-7">
+            <div className="absolute -left-0 top-20 w-full h-screen z-10 bg-primary px-4 md:px-12 py-7">
               <ul className='mobile-nav-menu-content flex flex-col content-center mt-8 text-white'>
-                <li><Link to='/about'>Articles</Link></li>
                 <li><Link to='/about'>About</Link></li>
+                <li><Link to='/about'>Blog</Link></li>
+                <li><Link to='/about'>Contact</Link></li>
               </ul>
             </div>
           ) : null}
