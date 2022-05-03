@@ -11,7 +11,7 @@ export default function Header() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   return (
-    <header className="h-20 lg:h-32" role="banner">
+    <header className="h-20 lg:h-24" role="banner">
       <div className={`
           fixed 
           z-20 
@@ -19,11 +19,7 @@ export default function Header() {
           bg-white
           w-full 
           mx-auto 
-          lg:h-24 
-          px-6 
-          md:px-8 
-          md:py-6 
-          lg:pt-8 
+          px-6
           lg:pb-0
         `}
       >

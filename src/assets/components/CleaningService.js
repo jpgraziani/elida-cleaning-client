@@ -5,9 +5,9 @@ const CleaningService = () => {
   return (
     <section className='bg-darkTan  text-primary'>
       <article className='max-w-5xl whyElida grid grid-cols-1 sm:grid-cols-2'>
-        <div className='container sm:col-start-2 sm:row-start-1'>
+        <div className='container sm:col-start-2 sm:row-start-1 sm:pl-10'>
           <h2 className='h2-title mb-3'>Why Elida's cleaning service?</h2>
-          <ul className='p-text list-disc px-5'>
+          <ul className='p-text list-disc list-inside'>
             <li>Celiac tousled irony 8-bit</li>
             <li>I'm baby master cleanse </li>
             <li>Cred shaman fanny pack</li>
