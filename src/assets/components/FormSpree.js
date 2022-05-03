@@ -19,7 +19,7 @@ function MessageForm() {
             <h2 className='mt-6 text-4xl px-4 text-center'>How can we help you today?</h2>
           </div>
           {/* <img className='invisible quality-badge sm:visible absolute w-20 h-20 -top-10 left-1/4' src={badge} alt='quality service badge' /> */}
-          <section className='flex flex-col w-screen px-4'>
+          <section className='flex flex-col px-4'>
             <label 
               className='mb-2 text-lg uppercase'
               htmlFor="email" 
@@ -27,7 +27,7 @@ function MessageForm() {
               Email Address
             </label>
             <input
-              className='mb-4 h-10 bg-mediumTan border-t-4 border-solid border-primary px-4 py-4l'
+              className='mb-4 h-10 bg-mediumTan border-t-4 border-solid border-primary px-4 py-4l w-96'
               aria-placeholder='enter your email'
               id="email"
               type="email" 
@@ -45,7 +45,7 @@ function MessageForm() {
               htmlFor="message">Your message</label>
             <textarea
               aria-placeholder='enter your message here'
-              className='bg-mediumTan border-t-4 border-solid border-primary px-4 py-4'
+              className='bg-mediumTan border-t-4 border-solid border-primary px-4 py-4 w-96'
               id="message"
               name="message"
               placeholder="How can we help?"

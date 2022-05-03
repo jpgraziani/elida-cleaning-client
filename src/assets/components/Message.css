@@ -1,0 +1,10 @@
+.message-bkg-container {
+  background-image: url('../images/sidekix-media-g51F6-WYzyU-unsplash.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-container {
+  margin: 0 auto;
+}

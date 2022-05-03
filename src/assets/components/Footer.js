@@ -8,7 +8,7 @@ const Footer = () => {
   const date = new Date().getFullYear()
   return (
     <footer className='footer-container bg-primary text-white'>
-      <article className='foot-container max-w-5xl flex flex-col justify-center text-center sm:flex-row sm:flex-wrap sm:text-left sm:justify-evenly'>
+      <article className='foot-container max-w-5xl flex flex-col justify-center text-center sm:flex-row sm:flex-wrap sm:text-left sm:justify-around'>
         <div className=''>
         <h2 className='h2-title'>Elida</h2>
         <span>cleaning service</span>

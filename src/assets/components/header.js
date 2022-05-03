@@ -19,7 +19,7 @@ export default function Header() {
           bg-white
           w-full 
           mx-auto 
-          lg:h-32  
+          lg:h-24 
           px-6 
           md:px-8 
           md:py-6 
@@ -27,7 +27,7 @@ export default function Header() {
           lg:pb-0
         `}
       >
-        <div className="h-full flex lg:flex-col place-content-between">
+        <div className="h-full flex justify-center items-center">
           <div className="text-center w-full flex justify-between items-center">
             <Link to='/'><h2 className='logo-text text-blue-800'>Elidas</h2></Link>
               <MobileNavigation
@@ -41,3 +41,7 @@ export default function Header() {
     </header>
   );
 }
+
+/*
+place-content-between
+*/
