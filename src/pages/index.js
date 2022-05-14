@@ -6,6 +6,7 @@ import CleaningService from '../assets/components/CleaningService';
 import Services from '../assets/components/Services';
 import Message from '../assets/components/Message';
 import Blog from '../assets/components/Blog';
+import BlogPost from '../assets/components/blog/AllBlogPost'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
          <Services />
          <Message />
          <Blog />
+         <BlogPost />
       </main>
     </Layout>
   )
