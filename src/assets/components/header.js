@@ -18,8 +18,7 @@ export default function Header() {
           mx-auto 
           px-6
           lg:pb-0
-        `}
-      >
+        `}>
         <div className="h-full flex justify-center items-center">
           <div className="text-center w-full justify-between flex items-center">
             <Link to='/'>
