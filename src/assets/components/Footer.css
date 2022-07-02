@@ -1,0 +1,49 @@
+.waves-footer {
+  height: 20px;
+  background-image: url('../images/waves-footer.svg');
+  background-size: 200%;
+  width: 200%;
+  width: 100vw;
+  background-repeat: repeat-x;
+  /* margin-left: -100px; */
+  overflow: hidden;
+  z-index: 2000;
+  position: relative;
+  top: -15px;
+  /* left: -100px; */
+}
+
+.waves-footer {
+  /* animation: footerBackgroundScroll 10s linear infinite; */
+  /* -webkit-animation: footerBackgroundScroll 10s linear infinite; */
+  animation-name: footerBackgroundScroll;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes footerBackgroundScroll {
+  from {background-position: 0px 0;}
+  to {background-position: -500px 0;}
+}
+
+@media screen and (min-width: 300px) {
+  .waves-footer {
+    background-size: 200%;
+    /* margin-top: -60px; */
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .waves-footer {
+    background-size: 125%;
+    /* margin-top: -60px; */
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .waves-footer {
+    background-size: 100%;
+    /* margin-top: -60px; */
+  }
+}

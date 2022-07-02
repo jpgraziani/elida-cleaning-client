@@ -7,7 +7,7 @@ const Message = () => {
   return (
     <div className='message-bkg-container'>
       <div className='form-container max-w-lg flex justify-center'>
-        <div className='bg-darkTan my-6'>
+        <div className='bg-darkTan my-20'>
          <FormSpree />
         </div>
       </div>
