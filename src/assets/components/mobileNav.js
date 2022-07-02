@@ -47,7 +47,7 @@ function CloseIcon() {
     >
       <path
         d="M1 17L17 1M1 1L17 17"
-        stroke="yellow"
+        stroke="#061D3F"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
